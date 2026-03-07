@@ -1,7 +1,10 @@
-﻿import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import OrbBackground from "./components/OrbBackground";
+import GradientText from "./components/reactbits/GradientText";
+import MagneticButton from "./components/reactbits/MagneticButton";
+import SpotlightCard from "./components/reactbits/SpotlightCard";
 import content from "./data/content.json";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -12,6 +15,12 @@ function t(value, lang) {
   if (value == null) return "";
   if (typeof value === "string") return value;
   return value[lang] || value.es || "";
+}
+
+function normalizeUrl(value) {
+  if (!value) return "#";
+  if (/^(mailto:|tel:|https?:\/\/)/i.test(value)) return value;
+  return `https://${value}`;
 }
 
 function navText(lang) {
@@ -65,7 +74,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    gsap.from([".eyebrow", "#heroName", "#heroRole", "#heroTagline", ".hero-actions", ".social-list"], {
+    gsap.from([".eyebrow", "#heroName", "#heroRole", "#heroTagline", ".hero-actions", ".social-list", ".reactbits-pill"], {
       y: 20,
       opacity: 0,
       duration: 0.7,
@@ -86,7 +95,7 @@ export default function App() {
       });
     });
 
-    gsap.utils.toArray([".card", ".project-card", ".timeline-item"]).forEach((item) => {
+    gsap.utils.toArray([".card", ".project-card", ".timeline-item", ".spotlight-card"]).forEach((item) => {
       gsap.from(item, {
         opacity: 0,
         y: 14,
@@ -214,17 +223,18 @@ export default function App() {
         <section className="hero section" id="home">
           <div className="container hero-grid">
             <p className="eyebrow">{content.meta.location}</p>
-            <h1 id="heroName">{content.meta.name}</h1>
+            <span className="reactbits-pill">ReactBits style UI</span>
+            <h1 id="heroName"><GradientText>{content.meta.name}</GradientText></h1>
             <p id="heroRole" className="hero-role">{content.meta.role}</p>
             <p id="heroTagline" className="hero-tagline">{t(content.meta.tagline, lang)}</p>
             <div className="hero-actions">
-              <a className="btn btn-primary" href="#projects">{t(content.ui.ctaProjects, lang)}</a>
-              <a className="btn btn-ghost" href="#contact">{t(content.ui.ctaContact, lang)}</a>
+              <MagneticButton className="btn btn-primary" href="#projects">{t(content.ui.ctaProjects, lang)}</MagneticButton>
+              <MagneticButton className="btn btn-ghost" href="#contact">{t(content.ui.ctaContact, lang)}</MagneticButton>
             </div>
             <ul className="social-list" aria-label="Social links">
               {content.meta.socials.map((social) => (
                 <li key={social.label}>
-                  <a className="social-link" href={social.url} target="_blank" rel="noreferrer">
+                  <a className="social-link" href={normalizeUrl(social.url)} target="_blank" rel="noreferrer">
                     {social.label}
                   </a>
                 </li>
@@ -239,7 +249,9 @@ export default function App() {
               <p className="section-kicker">{t(content.ui.aboutKicker, lang)}</p>
               <h2>{t(content.ui.aboutTitle, lang)}</h2>
             </div>
-            <p className="lead">{t(content.about.text, lang)}</p>
+            <SpotlightCard>
+              <p className="lead">{t(content.about.text, lang)}</p>
+            </SpotlightCard>
           </div>
         </section>
 
@@ -305,12 +317,12 @@ export default function App() {
                   </div>
                   <div className="project-links">
                     {project.demoUrl ? (
-                      <a className="project-link" href={project.demoUrl} target="_blank" rel="noreferrer">
+                      <a className="project-link" href={normalizeUrl(project.demoUrl)} target="_blank" rel="noreferrer">
                         {t(content.ui.projectDemo, lang)}
                       </a>
                     ) : null}
                     {project.repoUrl ? (
-                      <a className="project-link" href={project.repoUrl} target="_blank" rel="noreferrer">
+                      <a className="project-link" href={normalizeUrl(project.repoUrl)} target="_blank" rel="noreferrer">
                         {t(content.ui.projectRepo, lang)}
                       </a>
                     ) : null}

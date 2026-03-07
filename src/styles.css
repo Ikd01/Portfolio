@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #f6f5f2;
   --surface: #fffdf7;
   --surface-2: #f0ede6;
@@ -223,6 +223,37 @@ a {
   gap: 1rem;
 }
 
+.reactbits-pill {
+  width: fit-content;
+  background: rgba(255, 253, 247, 0.72);
+  border: 1px solid rgba(13, 92, 99, 0.25);
+  color: var(--brand);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.gradient-text {
+  background-image: linear-gradient(120deg, #0d5c63, #ba3f1d, #0d5c63);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: text-shift 6s linear infinite;
+}
+
+@keyframes text-shift {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
 .eyebrow {
   color: var(--muted);
   font-weight: 600;
@@ -262,6 +293,10 @@ a {
   transform: translateY(-1px);
 }
 
+.magnetic-btn {
+  will-change: transform;
+}
+
 .btn-primary {
   background: var(--brand);
   color: #fff;
@@ -295,6 +330,17 @@ a {
 .section-grid {
   display: grid;
   gap: 1.2rem;
+}
+
+.spotlight-card {
+  --spot-x: 50%;
+  --spot-y: 50%;
+  position: relative;
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(13, 92, 99, 0.12), transparent 45%), var(--surface);
+  box-shadow: var(--shadow);
 }
 
 .cards-grid {
