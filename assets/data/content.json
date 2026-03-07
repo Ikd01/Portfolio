@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "name": "Isaac Kam Denia",
+    "role": "Frontend Developer",
+    "tagline": {
+      "es": "Creo experiencias web claras, rápidas y con una interfaz que comunica valor desde el primer segundo.",
+      "en": "I build clear, fast web experiences with interfaces that communicate value from the first second."
+    },
+    "location": "Barcelona, España",
+    "socials": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/your-user"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://linkedin.com/in/your-user"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:you@example.com"
+      }
+    ]
+  },
+  "about": {
+    "text": {
+      "es": "Soy desarrollador web con foco en frontend. Me gusta transformar ideas complejas en productos digitales simples de usar, accesibles y bien cuidados a nivel visual.",
+      "en": "I am a web developer focused on frontend. I enjoy turning complex ideas into simple-to-use digital products with strong visual quality and accessibility."
+    }
+  },
+  "skills": [
+    {
+      "category": {
+        "es": "Frontend",
+        "en": "Frontend"
+      },
+      "items": [
+        {
+          "name": "HTML5",
+          "level": "Advanced"
+        },
+        {
+          "name": "CSS3",
+          "level": "Advanced"
+        },
+        {
+          "name": "JavaScript",
+          "level": "Advanced"
+        },
+        {
+          "name": "TypeScript",
+          "level": "Intermediate"
+        }
+      ]
+    },
+    {
+      "category": {
+        "es": "Herramientas",
+        "en": "Tooling"
+      },
+      "items": [
+        {
+          "name": "Git/GitHub"
+        },
+        {
+          "name": "Vite"
+        },
+        {
+          "name": "Figma"
+        },
+        {
+          "name": "Lighthouse"
+        }
+      ]
+    },
+    {
+      "category": {
+        "es": "Soft Skills",
+        "en": "Soft Skills"
+      },
+      "items": [
+        {
+          "name": "Comunicación"
+        },
+        {
+          "name": "Resolución de problemas"
+        },
+        {
+          "name": "Trabajo en equipo"
+        },
+        {
+          "name": "Gestión de prioridades"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Grado en Ingeniería Informática",
+      "institution": "Universidad Ejemplo",
+      "date": "2020 - 2024",
+      "description": {
+        "es": "Especialización en desarrollo de software, arquitectura de aplicaciones y fundamentos de interacción persona-ordenador.",
+        "en": "Specialization in software development, application architecture, and human-computer interaction fundamentals."
+      }
+    },
+    {
+      "title": "Bootcamp Frontend Avanzado",
+      "institution": "Academia Web",
+      "date": "2024",
+      "description": {
+        "es": "Proyectos prácticos enfocados en rendimiento, accesibilidad, diseño responsive y buenas prácticas de JavaScript moderno.",
+        "en": "Hands-on projects focused on performance, accessibility, responsive design, and modern JavaScript best practices."
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title": "Dashboard de Analítica",
+      "description": {
+        "es": "Panel interactivo con filtros, visualización de KPIs y navegación optimizada para equipos de producto.",
+        "en": "Interactive dashboard with filters, KPI visualization, and optimized navigation for product teams."
+      },
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Chart.js"
+      ],
+      "image": "",
+      "demoUrl": "https://example.com/demo-analytics",
+      "repoUrl": "https://github.com/your-user/demo-analytics",
+      "featured": true
+    },
+    {
+      "title": "Landing de Producto SaaS",
+      "description": {
+        "es": "Landing enfocada en conversión con animaciones ligeras, estructura semántica y excelente rendimiento móvil.",
+        "en": "Conversion-focused landing page with lightweight motion, semantic structure, and strong mobile performance."
+      },
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "GSAP"
+      ],
+      "image": "",
+      "demoUrl": "https://example.com/demo-saas",
+      "repoUrl": "https://github.com/your-user/demo-saas",
+      "featured": false
+    },
+    {
+      "title": "Micrositio de Evento",
+      "description": {
+        "es": "Web informativa bilingüe con agenda, speakers y formulario de inscripción conectado a servicio externo.",
+        "en": "Bilingual event microsite with agenda, speakers, and registration form connected to an external service."
+      },
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "image": "",
+      "demoUrl": "https://example.com/demo-event",
+      "repoUrl": "https://github.com/your-user/demo-event",
+      "featured": false
+    }
+  ],
+  "contact": {
+    "email": "you@example.com",
+    "phone": "+34 600 000 000",
+    "location": "Madrid, España",
+    "provider": "formspree",
+    "formspree": {
+      "endpoint": "https://formspree.io/f/yourFormId"
+    },
+    "emailjs": {
+      "serviceId": "",
+      "templateId": "",
+      "publicKey": ""
+    }
+  },
+  "ui": {
+    "ctaProjects": {
+      "es": "Ver proyectos",
+      "en": "View projects"
+    },
+    "ctaContact": {
+      "es": "Contactar",
+      "en": "Contact"
+    },
+    "aboutKicker": {
+      "es": "Perfil",
+      "en": "Profile"
+    },
+    "aboutTitle": {
+      "es": "Diseño y desarrollo orientado a resultados",
+      "en": "Design and development focused on results"
+    },
+    "skillsKicker": {
+      "es": "Capacidades",
+      "en": "Capabilities"
+    },
+    "skillsTitle": {
+      "es": "Stack técnico y habilidades clave",
+      "en": "Technical stack and key skills"
+    },
+    "educationKicker": {
+      "es": "Formación",
+      "en": "Education"
+    },
+    "educationTitle": {
+      "es": "Base académica y aprendizaje continuo",
+      "en": "Academic foundation and continuous learning"
+    },
+    "projectsKicker": {
+      "es": "Trabajo",
+      "en": "Work"
+    },
+    "projectsTitle": {
+      "es": "Proyectos seleccionados",
+      "en": "Selected projects"
+    },
+    "projectDemo": {
+      "es": "Demo",
+      "en": "Demo"
+    },
+    "projectRepo": {
+      "es": "Repositorio",
+      "en": "Repository"
+    },
+    "contactKicker": {
+      "es": "Contacto",
+      "en": "Contact"
+    },
+    "contactTitle": {
+      "es": "Hablemos sobre tu próximo proyecto",
+      "en": "Let's talk about your next project"
+    },
+    "contactLead": {
+      "es": "Si buscas una web clara, rápida y bien diseñada, escríbeme y te responderé en breve.",
+      "en": "If you need a clear, fast, and polished website, send me a message and I will reply shortly."
+    },
+    "formName": {
+      "es": "Nombre",
+      "en": "Name"
+    },
+    "formEmail": {
+      "es": "Email",
+      "en": "Email"
+    },
+    "formMessage": {
+      "es": "Mensaje",
+      "en": "Message"
+    },
+    "formNamePlaceholder": {
+      "es": "Tu nombre",
+      "en": "Your name"
+    },
+    "formEmailPlaceholder": {
+      "es": "tu@email.com",
+      "en": "your@email.com"
+    },
+    "formMessagePlaceholder": {
+      "es": "Cuéntame qué necesitas...",
+      "en": "Tell me what you need..."
+    },
+    "formSubmit": {
+      "es": "Enviar mensaje",
+      "en": "Send message"
+    },
+    "formSending": {
+      "es": "Enviando...",
+      "en": "Sending..."
+    },
+    "formSuccess": {
+      "es": "Mensaje enviado correctamente. Gracias.",
+      "en": "Message sent successfully. Thank you."
+    },
+    "formErrorRequired": {
+      "es": "Completa todos los campos obligatorios.",
+      "en": "Please complete all required fields."
+    },
+    "formErrorEmail": {
+      "es": "Introduce un email válido.",
+      "en": "Please provide a valid email."
+    },
+    "formErrorSend": {
+      "es": "No se pudo enviar el mensaje. Inténtalo de nuevo.",
+      "en": "The message could not be sent. Please try again."
+    },
+    "backToTop": {
+      "es": "Volver arriba",
+      "en": "Back to top"
+    }
+  }
+}
