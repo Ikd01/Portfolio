@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "Isaac Kam Denia",
-    "role": "Frontend Developer",
+    "role": "IB Student",
     "tagline": {
       "es": "Creo experiencias web claras, rápidas y con una interfaz que comunica valor desde el primer segundo.",
       "en": "I build clear, fast web experiences with interfaces that communicate value from the first second."
@@ -10,15 +10,15 @@
     "socials": [
       {
         "label": "GitHub",
-        "url": "https://github.com/your-user"
+        "url": "https://github.com/Ikd01"
       },
       {
         "label": "LinkedIn",
-        "url": "https://linkedin.com/in/your-user"
+        "url": "https://linkedin.com/in/isaac-kam-denia-91abb5376"
       },
       {
         "label": "Email",
-        "url": "mailto:you@example.com"
+        "url": "mailto:ikdisaac02@gmail.com"
       }
     ]
   },
