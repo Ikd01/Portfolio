@@ -59,18 +59,31 @@ export default function App() {
 
   useEffect(() => {
     const sections = [...document.querySelectorAll("main section[id]")];
+    const header = document.querySelector(".site-header");
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) setActiveSection(entry.target.id);
-        });
-      },
-      { rootMargin: "-20% 0px -55% 0px", threshold: [0.2, 0.35, 0.5, 0.7] }
-    );
+    const updateActiveSection = () => {
+      const headerOffset = (header?.getBoundingClientRect().height || 0) + 24;
+      const scrollPosition = window.scrollY + headerOffset;
 
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
+      let currentSection = sections[0]?.id || "home";
+
+      sections.forEach((section) => {
+        if (scrollPosition >= section.offsetTop) {
+          currentSection = section.id;
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
+
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
   }, []);
 
   useEffect(() => {
