@@ -66,7 +66,7 @@ export default function App() {
           if (entry.isIntersecting) setActiveSection(entry.target.id);
         });
       },
-      { rootMargin: "-45% 0px -45% 0px", threshold: 0 }
+      { rootMargin: "-20% 0px -55% 0px", threshold: [0.2, 0.35, 0.5, 0.7] }
     );
 
     sections.forEach((section) => observer.observe(section));

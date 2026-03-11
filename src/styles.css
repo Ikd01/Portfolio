@@ -136,6 +136,7 @@ a {
 
 .section {
   padding: clamp(4rem, 9vw, 7rem) 0;
+  scroll-margin-top: 6.5rem;
 }
 
 .section-head {
